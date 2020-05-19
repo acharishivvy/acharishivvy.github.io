@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Site
 title:              Massively
 bio:                'Jekyll version of the Massively theme by HTML5UP'
@@ -66,3 +67,6 @@ jekyll-mentions:
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+=======
+theme: jekyll-theme-slate
+>>>>>>> 921fa7a318223c0e570fa7389347415a2d4d6a67
