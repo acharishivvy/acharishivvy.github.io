@@ -31,8 +31,8 @@ layout: default
                   <button class = "delete" aria-label="delete"></button>
                </div>
                <div class = "message-body">
-                  {{site.baseurl}}
-                  {{site.url}}
+                  <button class="is-primary" onclick="alert({{ site.baseurl }})"> Site baseURL</button>
+                  <button class="is-primary" onclick="alert({{ site.url }})"> Site URL</button>
                </div>
             </article>
 </section>
