@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ site.url }}">
+        {{ site.title }}
+      </a>
+      <div class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </div>
+    </div>
+    <div id="navbarMenuHeroB" class="navbar-menu">
+      <div class="navbar-end">
+        {% for page in site.pages %} {% if page.title %}
+        <a class="navbar-item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </div>
+</nav>

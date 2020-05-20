@@ -1,0 +1,16 @@
+---
+
+# Front Matter to check if Jekyll reads this file 
+
+---
+
+@import "site.css";
+@import "bulma.css";
+//@import "bootstrap.css"
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    overflow:hidden;
+}
