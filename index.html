@@ -24,6 +24,15 @@ layout: default
         Style Tuned
       </h2>
     </div>
-    <button class="button is-info" onmousedown="javascript:alert(site.baseurl, site.url)">Click Me!</button>
   </div>
+  <article class = "message is-primary">
+               <div class = "message-header">
+                  <p>Primary Message Box</p>
+                  <button class = "delete" aria-label="delete"></button>
+               </div>
+               <div class = "message-body">
+                  {{site.baseurl}}
+                  {{site.url}}
+               </div>
+            </article>
 </section>
