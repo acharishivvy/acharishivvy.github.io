@@ -25,14 +25,14 @@ layout: default
       </h2>
     </div>
   </div>
-  <article class = "message is-primary">
-               <div class = "message-header">
-                  <p>Primary Message Box</p>
-                  <button class = "delete" aria-label="delete"></button>
-               </div>
-               <div class = "message-body">
-                  <button class="is-primary" onclick="alert({{ site.baseurl }})"> Site baseURL</button>
-                  <button class="is-primary" onclick="alert({{ site.url }})"> Site URL</button>
-               </div>
-            </article>
+  <article class="message">
+    <div class="message-header">
+      <p>Primary Message Box</p>
+      <button class = "delete" aria-label="delete"></button>
+    </div>
+    <div class = "message-body">
+      <button class="button is-primary" onclick="alert({{ site.baseurl }})"> Site baseURL</button>
+      <button class="button is-primary" onclick="alert({{ site.url }})"> Site URL</button>
+    </div>
+  </article>
 </section>
