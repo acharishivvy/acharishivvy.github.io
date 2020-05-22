@@ -4,13 +4,30 @@
 
 ---
 
-@import "site.css";
 @import "bulma.css";
 //@import "bootstrap.css"
 
+
+html {
+    //height: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    overflow:hidden;
+    margin-top: auto;
+    overflow: hidden;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Fira Sans', sans-serif;
 }
