@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="{{ site.url | prepend: site.baseurl }}">
+      <a class="navbar-item" href="{{ site.baseurl | prepend: site.url }}">
         {{ site.title }}
       </a>
       <div class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
