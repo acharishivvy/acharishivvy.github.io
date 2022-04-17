@@ -1,5 +1,4 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches: [main]
@@ -10,25 +9,23 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [12.x, 14.x, 16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - name: Get files
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install packages
-        run: npm ci
-      - name: Build project
-        run: npm run build
-      - name: Export static files
-        run: npm run export
-      - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+          cache: "npm"
+      - run: npm i
+      - run: npm run build
+      - run: npm run export
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          branch: main
-          folder: out
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: main # The branch the action should deploy to.
+          folder: out # The folder the action should deploy.
