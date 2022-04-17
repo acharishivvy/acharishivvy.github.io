@@ -9,7 +9,6 @@ const nextConfig = {
 		loader: "imgix",
 		path: "",
 	},
-	presets: ["next/babel"],
 };
 
 module.exports = nextConfig;
