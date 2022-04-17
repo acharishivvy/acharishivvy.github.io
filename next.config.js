@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-const main = process.env.DEPLOY_TARGET === "main";
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
 	reactStrictMode: true,
-	assetPrefix: main ? "/saiyanshivvy.github.io/" : "",
+	assetPrefix: isProd ? "/saiyanshivvy.github.io/" : "",
 	images: {
 		loader: "imgix",
 		path: "",
