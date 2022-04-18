@@ -7,8 +7,8 @@ const nextConfig = {
 	exportPathMap: () => ({
 		"/": { page: "/" },
 	}),
-	basePath: isProd ? "/" : "",
-	assetPrefix: isProd ? "/" : "",
+	basePath: isProd ? "/saiyanshivvy.github.io" : "",
+	assetPrefix: isProd ? "/saiyanshivvy.github.io" : "",
 	images: {
 		loader: "imgix",
 		path: "",
