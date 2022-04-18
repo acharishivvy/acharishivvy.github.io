@@ -32,4 +32,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           BRANCH: gh-pages
           publish_dir: ./out
-          CLEAN: true
