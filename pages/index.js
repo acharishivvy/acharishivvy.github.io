@@ -43,7 +43,7 @@ export default function Home() {
 				</Container>
 
 				<div className={styles.grid}>
-					<a id='Projects' className={styles.card} style=''>
+					<a id='Projects' className={styles.card}>
 						<h2>Projects</h2>
 						<p>Take a look at some things I&apos;ve worked on!</p>
 					</a>
