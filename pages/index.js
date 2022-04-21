@@ -1,6 +1,6 @@
 import { Box, Heading, Container, Text, Stack } from "@chakra-ui/react";
 import styles from "../styles/Home.module.css";
-import ContactForm from "../Components/ContactForm";
+import ContactForm from "../components/contactForm";
 
 export default function Home() {
 	return (
