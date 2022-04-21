@@ -7,7 +7,7 @@ const nextConfig = {
 	exportPathMap: () => ({
 		"/": { page: "/" },
 	}),
-	basePath: isProd ? "/" : "",
+	basePath: "",
 	images: {
 		loader: "imgix",
 		path: "",
