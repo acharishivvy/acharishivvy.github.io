@@ -13,6 +13,7 @@ const nextConfig = {
 		loader: "imgix",
 		path: "",
 	},
+	webpack5: true,
 };
 
 module.exports = nextConfig;
