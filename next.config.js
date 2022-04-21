@@ -8,7 +8,7 @@ const nextConfig = {
 		"/": { page: "/" },
 	}),
 	basePath: isProd ? "/saiyanshivvy.github.io" : "",
-	assetPrefix: isProd ? "/saiyanshivvy.github.io/" : "",
+	assetPrefix: isProd ? "/saiyanshivvy.github.io" : "",
 	images: {
 		loader: "imgix",
 		path: "",
