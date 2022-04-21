@@ -19,14 +19,14 @@ const NavLink = ({ children }) => (
 			textDecoration: "none",
 			bg: useColorModeValue("gray.200", "gray.700"),
 		}}
-		href={`${children}`.toLowerCase()}>
+		href={children}>
 		{children}
 	</Link>
 );
 
-const Links = ["Home", "Projects", "Contact"];
+const Links = ["Home", "Projects", "Contact", "About"];
 
-export default function Nav() {
+export default function Navbar() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	return (
 		<>

@@ -1,19 +1,6 @@
-import {
-	Box,
-	Heading,
-	Container,
-	Text,
-	Button,
-	Stack,
-	Icon,
-	useColorModeValue,
-	createIcon,
-} from "@chakra-ui/react";
-import Head from "next/head";
-import Image from "next/image";
-import NextLink from "next/link";
+import { Box, Heading, Container, Text, Stack } from "@chakra-ui/react";
 import styles from "../styles/Home.module.css";
-import ContactForm from "./contact";
+import ContactForm from "../Components/contactForm";
 
 export default function Home() {
 	return (
@@ -29,15 +16,15 @@ export default function Home() {
 							fontWeight={600}
 							fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
 							lineHeight={"110%"}>
-							Welcome to
+							Hi, I&apos;m
 							<Text as={"span"} color={"green.400"}>
 								{" "}
-								My Portfolio
+								Shivneel
 							</Text>
 						</Heading>
 						<Text color={"gray.500"}>
-							Upgrade is currently in progress from Jekyll to NextJS! Stay
-							Tuned!
+							Promotions Support Analyst and Developer at Solutionists Ltd.
+							Bachelor of Computer System Graduate.
 						</Text>
 					</Stack>
 				</Container>
@@ -49,7 +36,9 @@ export default function Home() {
 					</a>
 				</div>
 			</main>
-			<ContactForm id='Contact' />
+			<div>
+				<ContactForm />
+			</div>
 		</div>
 	);
 }
