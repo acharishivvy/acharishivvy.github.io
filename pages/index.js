@@ -1,6 +1,6 @@
 import { Box, Heading, Container, Text, Stack } from "@chakra-ui/react";
 import styles from "../styles/Home.module.css";
-import ContactForm from "../src/components/contactForm";
+import ContactModal from "../components/ContactModal";
 
 export default function Home() {
 	return (
@@ -26,19 +26,29 @@ export default function Home() {
 							Promotions Support Analyst and Developer at Solutionists Ltd.
 							Bachelor of Computer System Graduate.
 						</Text>
+						<Heading color={"red.500"}>
+							Currently Under Construction. <br /> Check back soon!
+						</Heading>
+					</Stack>
+					<Stack as={Box} textAlign={"center"}>
+						<Box className={styles.grid}>
+							<a id='1' className={styles.card}>
+								<h2>1</h2>
+								<p>Text Here!</p>
+							</a>
+							<a id='2' className={styles.card}>
+								<h2>2</h2>
+								<p>Text Here!</p>
+							</a>
+						</Box>
+					</Stack>
+					<Stack as={Box} textAlign={"center"}>
+						<div>
+							<ContactModal />
+						</div>
 					</Stack>
 				</Container>
-
-				<div className={styles.grid}>
-					<a id='Projects' className={styles.card}>
-						<h2>Projects</h2>
-						<p>Take a look at some things I&apos;ve worked on!</p>
-					</a>
-				</div>
 			</main>
-			<div>
-				<ContactForm />
-			</div>
 		</div>
 	);
 }

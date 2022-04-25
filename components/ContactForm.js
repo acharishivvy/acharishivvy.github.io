@@ -26,7 +26,7 @@ export default function ContactForm() {
 	}
 
 	return (
-		<Container maxW='full' mt={0} centerContent overflow='hidden'>
+		<Container maxW='full' maxH='full' centerContent overflow='hidden'>
 			<form onSubmit={handleSubmit}>
 				<Flex>
 					<Box
