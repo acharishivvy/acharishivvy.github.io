@@ -1,6 +1,7 @@
-import { Box, Heading, Container, Text, Stack } from "@chakra-ui/react";
+import { Box, Heading, Container, Text, Stack, HStack } from "@chakra-ui/react";
 import styles from "../styles/Home.module.css";
 import ContactModal from "../components/ContactModal";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
 	return (
@@ -31,16 +32,43 @@ export default function Home() {
 						</Heading>
 					</Stack>
 					<Stack as={Box} textAlign={"center"}>
-						<Box className={styles.grid}>
-							<a id='1' className={styles.card}>
-								<h2>1</h2>
-								<p>Text Here!</p>
-							</a>
-							<a id='2' className={styles.card}>
-								<h2>2</h2>
-								<p>Text Here!</p>
-							</a>
-						</Box>
+						<HStack>
+							<Box className={styles.grid}>
+								<a id='reactDex' className={styles.card}>
+									<h2>Simple Pokedex</h2>
+									<p>Made with React, Tailwind & PokeAPI</p>
+								</a>
+								<a id='sfmlSnake' className={styles.card}>
+									<h2>Snake Game</h2>
+									<p>Made using SFML & C/C++</p>
+								</a>
+							</Box>
+						</HStack>
+						<HStack>
+							<Box className={styles.grid}>
+								<a id='htmlSnake' className={styles.card}>
+									<h2>Snake Game</h2>
+									<p>Made with HTML & JS</p>
+								</a>
+								<a id='libgdxPF' className={styles.card}>
+									<h2>Android Platformer</h2>
+									<p>Made using LibGDX & Java</p>
+								</a>
+							</Box>
+						</HStack>
+						<HStack>
+							<Box className={styles.grid}>
+								<a id='netQS' className={styles.card}>
+									<h2>Quality Souvenirs - E-Commerce Website</h2>
+									<p>Made using C# ASP.NET Core MVC</p>
+								</a>
+								<a id='phpQS' className={styles.card}>
+									<h2>Quality Souvenirs - E-Commerce Website (Remake)</h2>
+									<p>Made using PHP & Blade</p>
+								</a>
+							</Box>
+						</HStack>
+						<ProjectCard />
 					</Stack>
 					<Stack as={Box} textAlign={"center"}>
 						<div>
