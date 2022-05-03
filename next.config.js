@@ -2,7 +2,7 @@
 
 const nextConfig = {
 	reactStrictMode: true,
-	basePath: "",
+	basePath: "/",
 	images: {
 		loader: "imgix",
 		path: "",
