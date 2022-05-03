@@ -2,7 +2,7 @@
 
 const nextConfig = {
 	reactStrictMode: true,
-	basePath: "/saiyanshivvy.github.io/",
+	basePath: "/saiyanshivvy.github.io",
 	images: {
 		loader: "imgix",
 		path: "",
