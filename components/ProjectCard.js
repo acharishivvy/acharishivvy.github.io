@@ -6,11 +6,10 @@ import {
 	Text,
 	Stack,
 	Image,
+	Badge,
 } from "@chakra-ui/react";
 
-const IMAGE = "";
-
-export default function ProjectCard() {
+export default function ProjectCard(prop) {
 	return (
 		<Center py={12}>
 			<Box
@@ -36,7 +35,6 @@ export default function ProjectCard() {
 						pos: "absolute",
 						top: 5,
 						left: 0,
-						backgroundImage: `url(${IMAGE})`,
 						filter: "blur(15px)",
 						zIndex: -1,
 					}}
@@ -50,24 +48,26 @@ export default function ProjectCard() {
 						height={230}
 						width={282}
 						objectFit={"cover"}
-						src={IMAGE}
+						src={`${prop.image}`}
 						alt={"alt"}
 					/>
 				</Box>
 				<Stack pt={10} align={"center"}>
-					<Text color={"gray.500"} fontSize={"sm"} textTransform={"uppercase"}>
-						Brand
+					<Text fontWeight={800} fontSize={"xl"}>
+						{`${prop.title}`}
 					</Text>
-					<Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
-						Nice Chair, pink
-					</Heading>
+					<a href={prop.url} target='_blank' rel='noreferrer'>
+						<Badge variant='outline'>View on Github</Badge>
+					</a>
+					<Heading
+						fontSize={"2xl"}
+						fontFamily={"body"}
+						fontWeight={500}></Heading>
 					<Stack direction={"row"} align={"center"}>
-						<Text fontWeight={800} fontSize={"xl"}>
-							$57
-						</Text>
-						<Text textDecoration={"line-through"} color={"gray.600"}>
-							$199
-						</Text>
+						<Text
+							color={"gray.500"}
+							fontSize={"sm"}
+							textTransform={"uppercase"}>{`${prop.desc}`}</Text>
 					</Stack>
 				</Stack>
 			</Box>

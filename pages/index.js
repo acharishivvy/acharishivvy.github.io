@@ -24,51 +24,63 @@ export default function Home() {
 							</Text>
 						</Heading>
 						<Text color={"gray.500"}>
-							Promotions Support Analyst and Developer at Solutionists Ltd.
-							Bachelor of Computer System Graduate.
+							Promotions Support Analyst Solutionists Ltd. Bachelor of Computer
+							System Graduate.
 						</Text>
 						<Heading color={"red.500"}>
 							Currently Under Construction. <br /> Check back soon!
 						</Heading>
 					</Stack>
 					<Stack as={Box} textAlign={"center"}>
+						<Heading color={"teal.500"}>Projects</Heading>
 						<HStack>
 							<Box className={styles.grid}>
-								<a id='reactDex' className={styles.card}>
-									<h2>Simple Pokedex</h2>
-									<p>Made with React, Tailwind & PokeAPI</p>
-								</a>
-								<a id='sfmlSnake' className={styles.card}>
-									<h2>Snake Game</h2>
-									<p>Made using SFML & C/C++</p>
-								</a>
+								<ProjectCard
+									image='pkdex.png'
+									title='Pokedex'
+									desc='Made with React, Tailwind & PokeAPI'
+									url='https://github.com/SaiyanShivvy/tw-react-dex'
+								/>
+								<ProjectCard
+									image='libgdx.gif'
+									title='Android Platformer'
+									desc='Made using LibGDX & Java'
+									url='https://github.com/SaiyanShivvy/libgdx-platformer'
+								/>
 							</Box>
 						</HStack>
 						<HStack>
 							<Box className={styles.grid}>
-								<a id='htmlSnake' className={styles.card}>
-									<h2>Snake Game</h2>
-									<p>Made with HTML & JS</p>
-								</a>
-								<a id='libgdxPF' className={styles.card}>
-									<h2>Android Platformer</h2>
-									<p>Made using LibGDX & Java</p>
-								</a>
+								<ProjectCard
+									image='sfmlsnake.gif'
+									title='Snake Game'
+									desc='Made using SFML & C/C++'
+									url='https://github.com/SaiyanShivvy/sfml-snake-game'
+								/>
+								<ProjectCard
+									image='ViewForm1.jpg'
+									title='Pseudo-GPS'
+									desc='Made using C# MVC'
+									url='https://github.com/SaiyanShivvy/htmlSnake'
+								/>
 							</Box>
 						</HStack>
 						<HStack>
 							<Box className={styles.grid}>
-								<a id='netQS' className={styles.card}>
-									<h2>Quality Souvenirs - E-Commerce Website</h2>
-									<p>Made using C# ASP.NET Core MVC</p>
-								</a>
-								<a id='phpQS' className={styles.card}>
-									<h2>Quality Souvenirs - E-Commerce Website (Remake)</h2>
-									<p>Made using PHP & Blade</p>
-								</a>
+								<ProjectCard
+									image='phpqs.png'
+									title='Quality Souvenirs - E-Commerce Website'
+									desc='Made using C# ASP.NET Core MVC'
+									url='https://github.com/SaiyanShivvy/Quality-Souvenirs'
+								/>
+								<ProjectCard
+									image='phpqs.png'
+									title='Quality Souvenirs - E-Commerce Website (Alt)'
+									desc='Made using PHP & Laravel'
+									url='https://github.com/SaiyanShivvy/phpQS'
+								/>
 							</Box>
 						</HStack>
-						<ProjectCard />
 					</Stack>
 					<Stack as={Box} textAlign={"center"}>
 						<div>
