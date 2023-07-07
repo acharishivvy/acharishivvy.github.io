@@ -24,8 +24,9 @@ export default function Home() {
 							</Text>
 						</Heading>
 						<Text color={"gray.500"}>
-							Promotions Support Analyst Solutionists Ltd. Bachelor of Computer
-							System Graduate.
+							Promotions Support Analyst/Tester at Solutionists Ltd.
+							<br />
+							Bachelor of Computer System Graduate.
 						</Text>
 						<Heading color={"red.500"}>
 							Currently Under Construction. <br /> Check back soon!
