@@ -19,7 +19,6 @@ export default function Home() {
 							lineHeight={"110%"}>
 							Hi, I&apos;m
 							<Text as={"span"} color={"green.400"}>
-								{" "}
 								Shivneel
 							</Text>
 						</Heading>
