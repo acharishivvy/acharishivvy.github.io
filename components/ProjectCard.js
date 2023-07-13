@@ -20,8 +20,7 @@ export default function ProjectCard(prop) {
 				bg={useColorModeValue("white", "gray.800")}
 				boxShadow={"2xl"}
 				rounded={"lg"}
-				pos={"relative"}
-				zIndex={1}>
+				pos={"relative"}>
 				<Box
 					rounded={"lg"}
 					mt={-12}

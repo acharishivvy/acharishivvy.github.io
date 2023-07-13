@@ -19,6 +19,7 @@ export default function Home() {
 							lineHeight={"110%"}>
 							Hi, I&apos;m
 							<Text as={"span"} color={"green.400"}>
+								{" "}
 								Shivneel
 							</Text>
 						</Heading>
@@ -37,12 +38,18 @@ export default function Home() {
 									title='Pokedex'
 									desc='Made with React, Tailwind & PokeAPI'
 									url='https://github.com/SaiyanShivvy/tw-react-dex'
-								/>
+								/>{" "}
 								<ProjectCard
 									image='libgdx.gif'
 									title='Android Platformer'
 									desc='Made using LibGDX & Java'
 									url='https://github.com/SaiyanShivvy/libgdx-platformer'
+								/>{" "}
+								<ProjectCard
+									image='phpqs.png'
+									title='Quality Souvenirs - E-Commerce Website (Alt)'
+									desc='Made using PHP & Laravel'
+									url='https://github.com/SaiyanShivvy/phpQS'
 								/>
 							</Box>
 						</HStack>
@@ -53,28 +60,18 @@ export default function Home() {
 									title='Snake Game'
 									desc='Made using SFML & C/C++'
 									url='https://github.com/SaiyanShivvy/sfml-snake-game'
-								/>
+								/>{" "}
 								<ProjectCard
 									image='ViewForm1.jpg'
 									title='Pseudo-GPS'
 									desc='Made using C# MVC'
 									url='https://github.com/SaiyanShivvy/htmlSnake'
-								/>
-							</Box>
-						</HStack>
-						<HStack>
-							<Box className={styles.grid}>
+								/>{" "}
 								<ProjectCard
 									image='phpqs.png'
 									title='Quality Souvenirs - E-Commerce Website'
 									desc='Made using C# ASP.NET Core MVC'
 									url='https://github.com/SaiyanShivvy/Quality-Souvenirs'
-								/>
-								<ProjectCard
-									image='phpqs.png'
-									title='Quality Souvenirs - E-Commerce Website (Alt)'
-									desc='Made using PHP & Laravel'
-									url='https://github.com/SaiyanShivvy/phpQS'
 								/>
 							</Box>
 						</HStack>
