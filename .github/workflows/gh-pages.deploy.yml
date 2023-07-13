@@ -21,11 +21,11 @@ jobs:
 
       - name: Build
         run: |
-          npm i
+          npm ci
           next build --debug
           next export
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./out
+          publish_dir: ./.next

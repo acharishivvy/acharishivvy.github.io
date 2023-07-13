@@ -25,7 +25,7 @@ export default function Home() {
 						<Text color={"gray.500"}>
 							I write code and stuff...
 							<br />
-							Take a look at some of the projects I've done!
+							Take a look at some of the projects I`&apos;`ve done!
 						</Text>
 					</Stack>
 					<Stack as={Box} textAlign={"center"}>
