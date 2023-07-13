@@ -3,7 +3,7 @@ import {
 	chakra,
 	Container,
 	Stack,
-	Text,
+	Center,
 	useColorModeValue,
 	VisuallyHidden,
 } from "@chakra-ui/react";
@@ -33,24 +33,26 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function Footer() {
 	return (
-		<Box
-			bg={useColorModeValue("gray.50", "gray.900")}
-			color={useColorModeValue("gray.700", "gray.200")}>
-			<Container
-				as={Stack}
-				maxW={"6xl"}
-				py={4}
-				direction={{ base: "column", md: "row" }}
-				spacing={4}
-				justify={{ base: "center", md: "space-between" }}
-				align={{ base: "center", md: "center" }}>
-				<Text>Made by Shivneel Achari using NextJS and ChakraUI</Text>
-				{/* <Stack direction={"row"} spacing={6}>
+		<Center>
+			<Box>
+				<Container
+					as={Stack}
+					maxW={"6xl"}
+					py={4}
+					direction={{ base: "column", md: "row" }}
+					spacing={4}
+					justify={{ base: "center", md: "space-between" }}
+					align={{ base: "center", md: "center" }}>
+					<Center color='black'>
+						Made by Shivneel Achari using NextJS and ChakraUI
+					</Center>
+					{/* <Stack direction={"row"} spacing={6}>
 					<SocialButton label={"Twitter"} href={"#"} />
 					<SocialButton label={"YouTube"} href={"#"} />
 					<SocialButton label={"Instagram"} href={"#"} />
 				</Stack> */}
-			</Container>
-		</Box>
+				</Container>
+			</Box>
+		</Center>
 	);
 }

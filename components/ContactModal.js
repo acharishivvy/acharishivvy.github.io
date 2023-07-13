@@ -9,13 +9,20 @@ import {
 	ModalCloseButton,
 	Button,
 	useDisclosure,
+	Center,
 } from "@chakra-ui/react";
 
 export default function ContactModal() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
-			<Button onClick={onOpen} variant='ghost' colorScheme='teal'>
+			<Button
+				onClick={onOpen}
+				variant='ghost'
+				maxW={"max-content"}
+				textAlign={"center"}
+				fontFamily={"Fira Sans"}
+				size={"2xl"}>
 				Contact Me
 			</Button>
 

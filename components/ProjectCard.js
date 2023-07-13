@@ -1,75 +1,58 @@
 import {
-	Box,
-	Center,
-	useColorModeValue,
+	Card,
+	CardBody,
+	CardFooter,
+	Image,
+	Stack,
+	Button,
 	Heading,
 	Text,
-	Stack,
-	Image,
-	Badge,
+	Center,
+	Spacer,
 } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function ProjectCard(prop) {
 	return (
-		<Center py={12}>
-			<Box
-				role={"group"}
-				p={6}
-				maxW={"330px"}
-				w={"full"}
-				bg={useColorModeValue("white", "gray.800")}
-				boxShadow={"2xl"}
-				rounded={"lg"}
-				pos={"relative"}>
-				<Box
-					rounded={"lg"}
-					mt={-12}
-					pos={"relative"}
-					height={"230px"}
-					_after={{
-						transition: "all .3s ease",
-						content: '""',
-						w: "full",
-						h: "full",
-						pos: "absolute",
-						top: 5,
-						left: 0,
-						filter: "blur(15px)",
-						zIndex: -1,
-					}}
-					_groupHover={{
-						_after: {
-							filter: "blur(20px)",
-						},
-					}}>
-					<Image
-						rounded={"lg"}
-						height={230}
-						width={282}
-						objectFit={"cover"}
-						src={`${prop.image}`}
-						alt={"alt"}
-					/>
-				</Box>
-				<Stack pt={10} align={"center"}>
-					<Text fontWeight={800} fontSize={"xl"}>
-						{`${prop.title}`}
-					</Text>
-					<a href={prop.url} target='_blank' rel='noreferrer'>
-						<Badge variant='outline'>View on Github</Badge>
-					</a>
+		<Card
+			direction={{ base: "column", sm: "row" }}
+			overflow={"hidden"}
+			variant={"outline"}
+			boxShadow={"2xl"}
+			w={"full"}>
+			<Image
+				objectFit={"cover"}
+				maxW={{ base: "100%", sm: "200px" }}
+				src={`${prop.image}`}
+				alt={`${prop.title}`}
+			/>
+			<Stack>
+				<CardBody>
 					<Heading
-						fontSize={"2xl"}
-						fontFamily={"body"}
-						fontWeight={500}></Heading>
-					<Stack direction={"row"} align={"center"}>
-						<Text
-							color={"gray.500"}
-							fontSize={"sm"}
-							textTransform={"uppercase"}>{`${prop.desc}`}</Text>
-					</Stack>
-				</Stack>
-			</Box>
-		</Center>
+						as='h3'
+						size='lg'
+						mb={4}
+						color={"#494949"}
+						letterSpacing='wide'>{`${prop.title}`}</Heading>
+					<Spacer></Spacer>
+					<Text
+						as='cite'
+						fontSize='md'
+						py='2'
+						lineHeight='normal'
+						fontWeight='semibold'>{`${prop.desc}`}</Text>
+				</CardBody>
+				<CardFooter>
+					<Button
+						leftIcon={<ExternalLinkIcon />}
+						colorScheme='#3d9895'
+						variant='solid'>
+						<a href={prop.url} target='_blank' rel='noreferrer'>
+							View on Github
+						</a>
+					</Button>
+				</CardFooter>
+			</Stack>
+		</Card>
 	);
 }

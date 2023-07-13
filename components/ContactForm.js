@@ -30,9 +30,9 @@ export default function ContactForm() {
 			<form onSubmit={handleSubmit}>
 				<Flex>
 					<Box
-						bg='#02054B'
+						bg='#b07bac'
 						color='white'
-						borderRadius='lg'
+						borderRadius='sm'
 						m={{ sm: 4, md: 16, lg: 10 }}
 						p={{ sm: 5, md: 5, lg: 16 }}>
 						<Box p={4}>
