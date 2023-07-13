@@ -24,13 +24,10 @@ export default function Home() {
 							</Text>
 						</Heading>
 						<Text color={"gray.500"}>
-							Promotions Support Analyst & Tester at Solutionists Ltd.
+							I write code and stuff...
 							<br />
-							Bachelor of Computer System Graduate.
+							Take a look at some of the projects I've done!
 						</Text>
-						<Heading color={"red.500"}>
-							Currently Under Construction. <br /> Check back soon!
-						</Heading>
 					</Stack>
 					<Stack as={Box} textAlign={"center"}>
 						<Heading color={"teal.500"}>Projects</Heading>
