@@ -53,7 +53,7 @@ export default function ContactForm() {
 											variant='outline'
 											mt={{ sm: 3, md: 3, lg: 5 }}
 											color='gray.500'>
-											<a href='https://drive.google.com/uc?export=download&id=1zAQEI7icT_g_3FMLdjJbNvNt8yvZQcub'>
+											<a href='https://profile.indeed.com/p/shivneela-c0nm5h5'>
 												Get CV (PDF)
 											</a>
 										</Button>

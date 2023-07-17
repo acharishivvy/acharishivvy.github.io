@@ -34,7 +34,7 @@ export default function Home() {
 								Shivneel.
 							</Text>
 						</Heading>
-						<Heading
+						{/* <Heading
 							fontWeight={600}
 							fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
 							lineHeight={"110%"}
@@ -42,7 +42,7 @@ export default function Home() {
 							<Text as={"span"} color={"#FF5D73"}>
 								I Write Code.
 							</Text>
-						</Heading>
+						</Heading> */}
 						<Text color={"#FF5D73"}></Text>
 						<Box>
 							<ContactModal />
