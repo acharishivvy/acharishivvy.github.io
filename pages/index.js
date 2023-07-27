@@ -1,53 +1,15 @@
-import {
-	Box,
-	Heading,
-	Container,
-	Text,
-	Stack,
-	HStack,
-	VStack,
-	IconButton,
-} from "@chakra-ui/react";
-import { MailIcon } from "@chakra-ui/icons";
+import { Box, Heading, Container, Text, Stack, VStack } from "@chakra-ui/react";
 import styles from "../styles/Home.module.css";
 import ContactModal from "../components/ContactModal";
 import ProjectCard from "../components/ProjectCard";
-import ProjectCarousel from "../components/ProjectCarousel";
+import HeroTitle from "../components/HeroTitle";
 
 export default function Home() {
 	return (
 		<div className={styles.container}>
 			<main className={styles.main}>
+				<HeroTitle />
 				<Container maxW={"max-content"}>
-					<Stack
-						textAlign={"center"}
-						spacing={{ base: 8, md: 14 }}
-						py={{ base: 10, md: 16 }}>
-						<Heading
-							fontWeight={600}
-							fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-							lineHeight={"110%"}
-							fontFamily={"Fira Sans"}>
-							Hi, I&apos;m
-							<Text as={"span"} color={"#FF5D73"}>
-								{" "}
-								Shivneel.
-							</Text>
-						</Heading>
-						{/* <Heading
-							fontWeight={600}
-							fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-							lineHeight={"110%"}
-							fontFamily={"Fira Sans"}>
-							<Text as={"span"} color={"#FF5D73"}>
-								I Write Code.
-							</Text>
-						</Heading> */}
-						<Text color={"#FF5D73"}></Text>
-						<Box>
-							<ContactModal />
-						</Box>
-					</Stack>
 					<Stack>
 						<Box textAlign={"center"}>
 							<Heading color={"#FF5D73"} fontFamily={"Fira Sans"}>
