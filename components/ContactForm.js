@@ -15,6 +15,7 @@ import {
 	Textarea,
 	Heading,
 	Text,
+	Spacer,
 } from "@chakra-ui/react";
 import { MdEmail, MdPerson } from "react-icons/md";
 
@@ -30,8 +31,7 @@ export default function ContactForm() {
 			<form onSubmit={handleSubmit}>
 				<Flex>
 					<Box
-						bg='#b07bac'
-						color='white'
+						color='Black'
 						borderRadius='sm'
 						m={{ sm: 4, md: 16, lg: 10 }}
 						p={{ sm: 5, md: 5, lg: 16 }}>
@@ -40,21 +40,17 @@ export default function ContactForm() {
 								<WrapItem>
 									<Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
 										<Heading>Contact</Heading>
-										<Text mt={{ sm: 3, md: 3, lg: 5 }} color='gray.500'>
-											Fill up the form below to contact
-										</Text>
-
+										<Spacer />
 										<Text mt={{ sm: 3, md: 3, lg: 5 }} color='gray.500'>
 											You can grab my CV here.
 										</Text>
-
 										<Button
 											colorScheme='teal'
 											variant='outline'
 											mt={{ sm: 3, md: 3, lg: 5 }}
 											color='gray.500'>
 											<a href='https://profile.indeed.com/p/shivneela-c0nm5h5'>
-												Get CV (PDF)
+												CV (PDF)
 											</a>
 										</Button>
 									</Box>
@@ -73,7 +69,7 @@ export default function ContactForm() {
 													</InputGroup>
 												</FormControl>
 												<FormControl id='mail'>
-													<FormLabel>Mail</FormLabel>
+													<FormLabel>E-Mail</FormLabel>
 													<InputGroup borderColor='#E0E1E7'>
 														<InputLeftElement pointerEvents='none'>
 															<MdEmail />

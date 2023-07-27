@@ -1,16 +1,24 @@
-import { Box, Heading, Container, Text, Stack, VStack } from "@chakra-ui/react";
+import {
+	Box,
+	Heading,
+	Container,
+	Stack,
+	VStack,
+	Button,
+} from "@chakra-ui/react";
 import styles from "../styles/Home.module.css";
-import ContactModal from "../components/ContactModal";
 import ProjectCard from "../components/ProjectCard";
+import ContactModal from "../components/ContactModal";
 import HeroTitle from "../components/HeroTitle";
+import { VscGithub } from "react-icons/vsc";
 
 export default function Home() {
 	return (
 		<div className={styles.container}>
 			<main className={styles.main}>
-				<HeroTitle />
 				<Container maxW={"max-content"}>
 					<Stack>
+						<HeroTitle />
 						<Box textAlign={"center"}>
 							<Heading color={"#FF5D73"} fontFamily={"Fira Sans"}>
 								Projects

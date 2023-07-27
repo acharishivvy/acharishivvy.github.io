@@ -3,13 +3,10 @@ import {
 	Modal,
 	ModalOverlay,
 	ModalContent,
-	ModalHeader,
-	ModalFooter,
 	ModalBody,
 	ModalCloseButton,
 	Button,
 	useDisclosure,
-	Center,
 } from "@chakra-ui/react";
 
 export default function ContactModal() {
@@ -19,10 +16,10 @@ export default function ContactModal() {
 			<Button
 				onClick={onOpen}
 				variant='ghost'
-				maxW={"max-content"}
-				textAlign={"center"}
-				fontFamily={"Fira Sans"}
-				size={"2xl"}>
+				rounded={"full"}
+				size={"lg"}
+				fontWeight={"normal"}
+				px={6}>
 				Contact Me
 			</Button>
 
