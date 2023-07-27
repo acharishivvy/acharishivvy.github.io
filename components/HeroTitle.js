@@ -63,7 +63,10 @@ export default function HeroTitle() {
 							bg={"red.400"}
 							_hover={{ bg: "red.500" }}
 							leftIcon={<VscGithub />}>
-							<a target='_blank' href='https://www.github.com/saiyanshivvy'>
+							<a
+								target='_blank'
+								rel='noreferrer'
+								href='https://www.github.com/saiyanshivvy'>
 								{" "}
 								<span> Github </span>{" "}
 							</a>
