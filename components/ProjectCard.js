@@ -7,7 +7,7 @@ import {
 	Button,
 	Heading,
 	Text,
-	Center,
+	Box,
 	Spacer,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
@@ -43,14 +43,14 @@ export default function ProjectCard(prop) {
 						fontWeight='semibold'>{`${prop.desc}`}</Text>
 				</CardBody>
 				<CardFooter>
-					<Button
-						leftIcon={<ExternalLinkIcon />}
-						colorScheme='#3d9895'
-						variant='solid'>
-						<a href={prop.url} target='_blank' rel='noreferrer'>
+					<Box boxSize='2.5em'>
+						<Image src='https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png' />
+					</Box>
+					<a href={prop.url} target='_blank' rel='noreferrer'>
+						<Button colorScheme='blue' variant='outline'>
 							View on Github
-						</a>
-					</Button>
+						</Button>
+					</a>
 				</CardFooter>
 			</Stack>
 		</Card>

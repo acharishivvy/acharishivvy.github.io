@@ -5,7 +5,7 @@ import {
 	Heading,
 	Text,
 	Button,
-	Link,
+	Box,
 } from "@chakra-ui/react";
 import ContactModal from "../components/ContactModal";
 import { VscGithub } from "react-icons/vsc";
@@ -35,7 +35,7 @@ export default function HeroTitle() {
 								bg: "red.400",
 								zIndex: -1,
 							}}>
-							Hi I&apos;m,
+							Hi, I&apos;m
 						</Text>
 						<br />
 						<Text as={"span"} color={"red.400"}>
@@ -50,20 +50,40 @@ export default function HeroTitle() {
 						This is where I share what I&apos;ve worked on and have learned.
 					</Text>
 					<Stack
-						textAlign={"center"}
 						spacing={{ base: 4, sm: 6 }}
 						direction={{ base: "column", sm: "row" }}>
-						<Button
-							rounded={"full"}
-							size={"lg"}
-							fontWeight={"bold"}
-							px={6}
-							colorScheme={"red"}
-							bg={"red.400"}
-							_hover={{ bg: "red.500" }}>
-							Github
-						</Button>
-						<ContactModal />
+						<Text as='button' fontWeight={600}>
+							{" "}
+							Socials and Contact:{" "}
+						</Text>
+						<Box as='button' boxSize='5em'>
+							<a
+								href='https://github.com/SaiyanShivvy/'
+								target='_blank'
+								rel='noreferrer'>
+								<img src='https://imgs.search.brave.com/XikLXqKz4_tQ8NZisVBhxTVsLu9MMvcXJsYzXJGiPlg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9HaXRIdWIv/R2l0SHViLVdvcmRt/YXJrLUxvZ28ud2lu/ZS5zdmc.svg' />
+							</a>
+						</Box>
+						<Box boxSize='5em' as='button'>
+							<a
+								href='https://www.linkedin.com/in/shivneel-achari-188573170/'
+								target='_blank'
+								rel='noreferrer'>
+								<img src='https://imgs.search.brave.com/bi3Z0OVytL_FlfY8sL5AreYJMmzFVnlAm1xZSFiswQ0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcm9p/bmZsdWVudC5iLWNk/bi5uZXQvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTkvMDUvTG9n/by1MaW5rZWRJbi1v/ZmZpY2llbC5wbmc' />
+							</a>
+						</Box>
+
+						<Box boxSize='5em' as='button'>
+							<a
+								href='https://profile.indeed.com/p/shivneela-c0nm5h5'
+								target='_blank'
+								rel='noreferrer'>
+								<img src='https://imgs.search.brave.com/1orYgjW1RxZUtANRhaMMMjtbCQ3NMT_aV1hFLuwHieU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzAx/L0luZGVlZC1sb2dv/LTUwMHgyODEucG5n' />
+							</a>
+						</Box>
+						<Box boxSize='5em' as='button'>
+							<ContactModal />
+						</Box>
 					</Stack>
 				</Stack>
 			</Stack>
