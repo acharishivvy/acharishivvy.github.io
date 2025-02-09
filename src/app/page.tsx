@@ -1,7 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/HeroSection";
 import { VerticalProjectCarousel } from "@/components/ProjectCarousel";
-import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
