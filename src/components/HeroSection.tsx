@@ -17,7 +17,7 @@ export default function HeroSection() {
 						{/* Title */}
 						<div className='mt-5 max-w-screen-md'>
 							<h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
-								Hi, I'm Shivneel
+								Hi, I`&apos;`m Shivneel
 							</h1>
 						</div>
 						{/* End Title */}
@@ -28,13 +28,13 @@ export default function HeroSection() {
 								focus has been Web Development using ReactJS, but I am
 								passionate about expanding my skills into Mobile Development,
 								particularly with React Native. While I have experience in IT
-								Support roles, I've also developed several personal web projects
-								that have honed my technical abilities.
+								Support roles, I`&apos;`ve also developed several personal web
+								projects that have honed my technical abilities.
 							</p>
 							<br />
 							<p className='text-xl text-muted-foreground'>
-								On this page, you'll find a showcase of the work I’ve completed
-								and the skills I've acquired.
+								On this page, you`&apos;`ll find a showcase of the work
+								I`&apos;`ve completed and the skills I`&apos;`ve acquired.
 							</p>
 						</div>
 					</div>

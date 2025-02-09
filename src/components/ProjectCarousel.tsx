@@ -1,6 +1,5 @@
 // ProjectCarousel.tsx
 import * as React from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import {
 	Carousel,
 	CarouselContent,
