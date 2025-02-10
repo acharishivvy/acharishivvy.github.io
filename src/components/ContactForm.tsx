@@ -16,7 +16,7 @@ function ContactForm() {
 			<div className='space-y-8'>
 				<div className='border-b border-gray-900/10'>
 					<p className='text-base/7 font-semibold text-gray-900 text-3xl font-semibold tracking-tight first:mt-0'>
-						Let`&apos;`s Connect!
+						Let&apos;s Connect!
 					</p>
 				</div>
 
