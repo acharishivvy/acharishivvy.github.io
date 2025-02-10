@@ -5,10 +5,7 @@ import { Dialog } from "@/components/ui/dialog";
 import Image from "next/image";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Label } from "./ui/label";
-import { Badge } from "./ui/badge";
-
 export default function ProjectCard({
-	id,
 	title,
 	description,
 	technologies = [],
