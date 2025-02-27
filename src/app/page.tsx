@@ -34,14 +34,14 @@ export default function Home() {
 						Contact
 					</a>
 				</div>
-				<div className='flex w-full'>
-                    <div className="w-2/3 pr-8">
-                        <VerticalProjectCarousel />
-                    </div>
-                    <div className="w-1/3">
-                        <ContactForm />
-                    </div>
-                </div>
+				<div className='flex flex-row py-4 justify-between'>
+					<div className='flex-1'>
+						<VerticalProjectCarousel />
+					</div>
+					<div className='flex mx-4'>
+						<ContactForm />
+					</div>
+				</div>
 			</main>
 			<footer className='row-start-3 flex gap-6 flex-wrap items-center justify-center w-full'>
 				<p>Made by Shivneel Achari using Next.js, Tailwind CSS and Shadcn.</p>

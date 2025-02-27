@@ -70,16 +70,16 @@ export function VerticalProjectCarousel() {
 	];
 
 	return (
-			<Carousel className='max-w-4xl'>
-				<CarouselContent>
-					{projects.map((project) => (
-						<CarouselItem key={project.id} className="p-1">
-							<ProjectCard {...project} />
-						</CarouselItem>
-					))}
-				</CarouselContent>
-				<CarouselPrevious className="" />
-				<CarouselNext className="" />
-			</Carousel>
+		<Carousel className='w-full max-w-lg'>
+			<CarouselContent>
+				{projects.map((project) => (
+					<CarouselItem key={project.id} className=''>
+						<ProjectCard {...project} />
+					</CarouselItem>
+				))}
+			</CarouselContent>
+			<CarouselPrevious className='' />
+			<CarouselNext className='' />
+		</Carousel>
 	);
 }

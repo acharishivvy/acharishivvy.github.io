@@ -23,13 +23,15 @@ export default function HeroSection() {
 						{/* End Title */}
 						<div className='mt-5 max-w-screen-md'>
 							<p className='text-xl text-muted-foreground'>
-								graduated from Unitec with a degree in Computer Systems and
-								Information, specializing in Software Development. My primary
-								focus has been Web Development using ReactJS, but I am
-								passionate about expanding my skills into Mobile Development,
-								particularly with React Native. While I have experience in IT
-								Support roles, I&apos;ve also developed several personal web
-								projects that have honed my technical abilities.
+								Bachelor&apos;s Degreee in Information & Computer Systems
+								(Computer Science), specializing in Software Development. My
+								primary focus has been Web Development using ReactJS, but I am
+								passionate about expanding my skills into other fields. I am
+								currently learning about Mobile Development, using React Native
+								as well as A.I Development. While I have experience in formal
+								work experience with IT Support roles, I&apos;ve also developed
+								several personal web projects that have honed my technical
+								abilities.
 							</p>
 							<br />
 							<p className='text-xl text-muted-foreground'>
