@@ -34,11 +34,11 @@ export default function Home() {
 						Contact
 					</a>
 				</div>
-				<div className='flex flex-row py-4 justify-between'>
-					<div className='flex-1'>
+				<div className='flex flex-row py-4 justify-between w-full'>
+					<div className='basis-2/3 flex-1'>
 						<VerticalProjectCarousel />
 					</div>
-					<div className='flex mx-4'>
+					<div className='basis-1/3 grow'>
 						<ContactForm />
 					</div>
 				</div>

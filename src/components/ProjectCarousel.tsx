@@ -15,8 +15,7 @@ export function VerticalProjectCarousel() {
 		{
 			id: 1,
 			title: "Pokedex",
-			description:
-				"This is another brief description. It provides an overview of what the project does.",
+			description: "A Simple Pokedex App, Using PokeAPI.",
 			technologies: ["React", "Vite", "TailwindCSS", "Shadcn"],
 			githubLink: "https://github.com/acharishivvy/tw-react-dex",
 			liveLink: "https://neo-tw-react-dex.vercel.app/",
@@ -70,16 +69,16 @@ export function VerticalProjectCarousel() {
 	];
 
 	return (
-		<Carousel className='w-full max-w-lg'>
-			<CarouselContent>
+		<Carousel className='w-full max-w-2xl'>
+			<CarouselContent className='-ml-2 md:-ml-4'>
 				{projects.map((project) => (
-					<CarouselItem key={project.id} className=''>
+					<CarouselItem key={project.id} className='pl-2 md:pl-4'>
 						<ProjectCard {...project} />
 					</CarouselItem>
 				))}
 			</CarouselContent>
-			<CarouselPrevious className='' />
-			<CarouselNext className='' />
+			<CarouselPrevious />
+			<CarouselNext />
 		</Carousel>
 	);
 }

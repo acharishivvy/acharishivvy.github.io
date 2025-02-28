@@ -20,48 +20,43 @@ export default function ProjectCard({
 }) {
 	return (
 		<Card className='w-full shadow-none'>
-			<CardHeader className='flex flex-col'>
-				<div className='flex gap-3'>
-					<div className='flex flex-col gap-4'>
-						<h6 className='text-sm leading-none font-medium'>{title}</h6>
-					</div>
-				</div>
+			<CardHeader className='flex flex-col items-center'>
+				<h6 className='font-bold text-lg leading-tight'>{title}</h6>
 			</CardHeader>
-			<CardContent className='aspect-square items-center p-4'>
-				<div className='' />
-				<Image
-					src={imageUrl}
-					alt={title}
-					width={400}
-					height={350}
-					className='rounded-lg object-cover'
-				/>
-				<div className=''>
-					<h2 className='font-semibold'>Description</h2>
-					<p className='mt-1 text-sm text-muted-foreground'>{description}</p>
-					<br />
-					{technologies && (
-						<div>
-							<h3 className='text-sm font-semibold'>Technologies Used:</h3>
-							<ul className='mt-1 space-y-1'>
-								{technologies.map((tech, index) => (
-									<Badge variant='outline' key={index}>
-										{tech}
-									</Badge>
-								))}
-							</ul>
-						</div>
-					)}
+			<CardContent className='p-4'>
+				<div className='relative mb-4 w-full h-auto'>
+					<Image
+						src={imageUrl}
+						alt={title}
+						width={400} // Set a fixed width or use layout="responsive"
+						height={350} // Set a fixed height or use layout="responsive"
+						className='rounded-lg object-cover w-full'
+					/>
 				</div>
+				<h2 className='font-semibold'>Description</h2>
+				<p className='mt-1 text-sm text-muted-foreground'>{description}</p>
+				<br />
+				{technologies && (
+					<div>
+						<h3 className='text-sm font-semibold'>Technologies Used:</h3>
+						<ul className='mt-1 space-y-1'>
+							{technologies.map((tech, index) => (
+								<Badge variant='outline' key={index}>
+									{tech}
+								</Badge>
+							))}
+						</ul>
+					</div>
+				)}
 			</CardContent>
-			<CardFooter className=' py-2 px-2'>
-				{githubLink && (
-					<div className='justify-self-end p-4'>
+			<CardFooter className='py-2 px-4'>
+				<div className='flex justify-end w-full'>
+					{githubLink && (
 						<a href={githubLink} target='_blank' rel='noopener noreferrer'>
 							<Button variant='outline'>View on GitHub</Button>
 						</a>
-					</div>
-				)}
+					)}
+				</div>
 			</CardFooter>
 		</Card>
 	);
