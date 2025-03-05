@@ -35,8 +35,8 @@ export default function HeroSection() {
 							</p>
 							<br />
 							<p className='text-xl text-muted-foreground'>
-								On this page, you&apos;ll find a showcase of the work I&apos;ve
-								completed and the skills I&apos;ve acquired.
+								On this page, you&apos;ll find a showcase of the some work
+								I&apos;ve completed.
 							</p>
 						</div>
 					</div>
