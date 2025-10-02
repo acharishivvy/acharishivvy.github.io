@@ -69,7 +69,12 @@ export function VerticalProjectCarousel() {
 	];
 
 	return (
-		<Carousel className='w-full max-w-3xl'>
+		<Carousel
+			className='w-full max-w-3xl'
+			opts={{
+				align: "start",
+				loop: true,
+			}}>
 			<CarouselContent className='-ml-2 md:-ml-4'>
 				{projects.map((project) => (
 					<CarouselItem key={project.id} className='pl-2 md:pl-4'>

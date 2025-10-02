@@ -34,11 +34,11 @@ export default function Home() {
 						Contact
 					</a>
 				</div>
-				<div className='flex flex-row py-4 justify-between w-full'>
-					<div className='basis-2/3 flex-1'>
+				<div className='flex flex-row py-4 px-4 justify-between w-full gap-4'>
+					<div className='basis-2/3'>
 						<VerticalProjectCarousel />
 					</div>
-					<div className='basis-1/3 grow'>
+					<div className='basis-1/3'>
 						<ContactForm />
 					</div>
 				</div>
@@ -49,4 +49,3 @@ export default function Home() {
 		</div>
 	);
 }
-
